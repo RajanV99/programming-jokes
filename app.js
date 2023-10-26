@@ -31,6 +31,6 @@ app.listen(3000, () => {
   console.log("Server is listening on port 3000");
 });
 app.get("/", (req, res) => {
-  res.send({ key: jokes[Math.floor(Math.random() * jokes.length)] });
+  res.send({ Joke: jokes[Math.floor(Math.random() * jokes.length)] });
 });
 app.use(cors());
